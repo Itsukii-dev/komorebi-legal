@@ -30,105 +30,184 @@
     .card { background: #1e1c14; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
     .highlight { background: rgba(74,103,65,0.1); border: 1px solid rgba(74,103,65,0.2); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
     footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; font-size: 12px; opacity: 0.4; }
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #1e1c14;
+      border: 1px solid #4a6741;
+      color: #7a9b6e;
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 1px;
+      z-index: 100;
+    }
+    .lang-toggle:hover { background: #2a2818; }
   </style>
 </head>
 <body>
+
+<button class="lang-toggle" id="langBtn">EN</button>
 
 <header>
   <div class="logo">🌳</div>
   <h1>Komorebi</h1>
   <div class="subtitle">PRIVACY POLICY</div>
-  <div class="updated">Ultimo aggiornamento: marzo 2026</div>
+  <div class="updated">
+    <span class="it">Ultimo aggiornamento: marzo 2026</span>
+    <span class="en" hidden>Last updated: March 2026</span>
+  </div>
 </header>
 
 <div class="highlight">
-  <p><strong style="color:#faf8f4">In breve:</strong> Komorebi raccoglie solo i dati strettamente necessari al funzionamento dell'app. Non vendiamo i tuoi dati a terzi, non mostriamo pubblicità e non utilizziamo tracker di profilazione.</p>
+  <p>
+    <strong style="color:#faf8f4"><span class="it">In breve:</span><span class="en" hidden>In short:</span></strong>
+    <span class="it"> Komorebi raccoglie solo i dati strettamente necessari al funzionamento dell'app. Non vendiamo i tuoi dati a terzi, non mostriamo pubblicità e non utilizziamo tracker di profilazione.</span>
+    <span class="en" hidden> Komorebi only collects data strictly necessary for the app to work. We do not sell your data to third parties, show no ads, and use no profiling trackers.</span>
+  </p>
 </div>
 
-<h2>1. Titolare del trattamento</h2>
-<p>Il titolare del trattamento dei dati personali raccolti tramite l'applicazione Komorebi è:</p>
+<h2><span class="it">1. Titolare del trattamento</span><span class="en" hidden>1. Data Controller</span></h2>
+<p>
+  <span class="it">Il titolare del trattamento dei dati personali raccolti tramite l'applicazione Komorebi è:</span>
+  <span class="en" hidden>The controller of personal data collected through the Komorebi application is:</span>
+</p>
 <div class="card">
   <p><strong style="color:#faf8f4">Studio Komorebi</strong><br>
   Email: <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a></p>
 </div>
 
-<h2>2. Dati raccolti</h2>
-<p>Komorebi raccoglie esclusivamente i dati che l'utente inserisce volontariamente:</p>
+<h2><span class="it">2. Dati raccolti</span><span class="en" hidden>2. Data Collected</span></h2>
+<p>
+  <span class="it">Komorebi raccoglie esclusivamente i dati che l'utente inserisce volontariamente:</span>
+  <span class="en" hidden>Komorebi collects only data that the user voluntarily enters:</span>
+</p>
 <ul>
-  <li><strong style="color:#faf8f4">Account:</strong> indirizzo email e password (cifrata) per la registrazione e l'accesso</li>
-  <li><strong style="color:#faf8f4">Piante:</strong> nome, specie, emoji, date di cura (annaffiatura, concimazione, rinvaso), posizione e note personali</li>
-  <li><strong style="color:#faf8f4">Diario:</strong> note, testi e fotografie allegate alle voci del diario di crescita</li>
-  <li><strong style="color:#faf8f4">Impostazioni:</strong> preferenze di notifica (orario, tipo), nome visualizzato nel profilo</li>
+  <li><strong style="color:#faf8f4"><span class="it">Account:</span><span class="en" hidden>Account:</span></strong> <span class="it"> indirizzo email e password (cifrata) per la registrazione e l'accesso</span><span class="en" hidden> email address and password (encrypted) for registration and login</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Piante:</span><span class="en" hidden>Plants:</span></strong> <span class="it"> nome, specie, emoji, date di cura (annaffiatura, concimazione, rinvaso), posizione e note personali</span><span class="en" hidden> name, species, emoji, care dates (watering, fertilising, repotting), location and personal notes</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Diario:</span><span class="en" hidden>Journal:</span></strong> <span class="it"> note, testi e fotografie allegate alle voci del diario di crescita</span><span class="en" hidden> notes, text entries and photographs attached to growth journal entries</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Impostazioni:</span><span class="en" hidden>Settings:</span></strong> <span class="it"> preferenze di notifica (orario, tipo), nome visualizzato nel profilo</span><span class="en" hidden> notification preferences (time, type), display name in profile</span></li>
 </ul>
 
-<h2>3. Dati NON raccolti</h2>
+<h2><span class="it">3. Dati NON raccolti</span><span class="en" hidden>3. Data NOT Collected</span></h2>
 <div class="card">
   <ul style="margin: 0;">
-    <li>Dati di geolocalizzazione</li>
-    <li>Identificatori pubblicitari (IDFA)</li>
-    <li>Dati di navigazione o comportamento in-app</li>
-    <li>Contatti, microfono, fotocamera (salvo scatto foto diario, su consenso esplicito)</li>
-    <li>Dati biometrici</li>
+    <li><span class="it">Dati di geolocalizzazione</span><span class="en" hidden>Geolocation data</span></li>
+    <li><span class="it">Identificatori pubblicitari (IDFA)</span><span class="en" hidden>Advertising identifiers (IDFA)</span></li>
+    <li><span class="it">Dati di navigazione o comportamento in-app</span><span class="en" hidden>Browsing or in-app behaviour data</span></li>
+    <li><span class="it">Contatti, microfono, fotocamera (salvo scatto foto diario, su consenso esplicito)</span><span class="en" hidden>Contacts, microphone, camera (except journal photo capture, with explicit consent)</span></li>
+    <li><span class="it">Dati biometrici</span><span class="en" hidden>Biometric data</span></li>
   </ul>
 </div>
 
-<h2>4. Finalità del trattamento</h2>
-<p>I dati vengono utilizzati esclusivamente per:</p>
+<h2><span class="it">4. Finalità del trattamento</span><span class="en" hidden>4. Purposes of Processing</span></h2>
+<p>
+  <span class="it">I dati vengono utilizzati esclusivamente per:</span>
+  <span class="en" hidden>Data is used exclusively to:</span>
+</p>
 <ul>
-  <li>Fornire il servizio (gestione della collezione di piante, promemoria, diario)</li>
-  <li>Autenticare l'utente e proteggere il suo account</li>
-  <li>Inviare notifiche locali di promemoria (elaborate interamente sul dispositivo)</li>
-  <li>Rispondere a richieste di supporto inviate via email</li>
+  <li><span class="it">Fornire il servizio (gestione della collezione di piante, promemoria, diario)</span><span class="en" hidden>Provide the service (plant collection management, reminders, journal)</span></li>
+  <li><span class="it">Autenticare l'utente e proteggere il suo account</span><span class="en" hidden>Authenticate the user and protect their account</span></li>
+  <li><span class="it">Inviare notifiche locali di promemoria (elaborate interamente sul dispositivo)</span><span class="en" hidden>Send local reminder notifications (processed entirely on the device)</span></li>
+  <li><span class="it">Rispondere a richieste di supporto inviate via email</span><span class="en" hidden>Respond to support requests sent by email</span></li>
 </ul>
 
-<h2>5. Base giuridica</h2>
-<p>Il trattamento dei dati si basa sul contratto tra l'utente e Komorebi (art. 6, par. 1, lett. b del GDPR) — i dati sono necessari per erogare il servizio richiesto. Per i dati facoltativi (foto, note), la base è il consenso esplicito dell'utente.</p>
+<h2><span class="it">5. Base giuridica</span><span class="en" hidden>5. Legal Basis</span></h2>
+<p>
+  <span class="it">Il trattamento dei dati si basa sul contratto tra l'utente e Komorebi (art. 6, par. 1, lett. b del GDPR) — i dati sono necessari per erogare il servizio richiesto. Per i dati facoltativi (foto, note), la base è il consenso esplicito dell'utente.</span>
+  <span class="en" hidden>Data processing is based on the contract between the user and Komorebi (Art. 6(1)(b) GDPR) — data is necessary to deliver the requested service. For optional data (photos, notes), the legal basis is the user's explicit consent.</span>
+</p>
 
-<h2>6. Servizi terzi</h2>
-<p>Komorebi utilizza i seguenti servizi di terze parti per il funzionamento del backend:</p>
+<h2><span class="it">6. Servizi terzi</span><span class="en" hidden>6. Third-Party Services</span></h2>
+<p>
+  <span class="it">Komorebi utilizza i seguenti servizi di terze parti per il funzionamento del backend:</span>
+  <span class="en" hidden>Komorebi uses the following third-party services for backend operation:</span>
+</p>
 <div class="card">
   <p><strong style="color:#faf8f4">Supabase</strong> (Supabase Inc., USA)<br>
-  Database cloud per la conservazione sicura dei dati dell'utente. I dati sono cifrati in transito (TLS) e a riposo. Supabase è conforme al GDPR.<br>
-  <a href="https://supabase.com/privacy" target="_blank">Privacy Policy di Supabase →</a></p>
+  <span class="it">Database cloud per la conservazione sicura dei dati dell'utente. I dati sono cifrati in transito (TLS) e a riposo. Supabase è conforme al GDPR.</span>
+  <span class="en" hidden>Cloud database for secure storage of user data. Data is encrypted in transit (TLS) and at rest. Supabase is GDPR-compliant.</span><br>
+  <a href="https://supabase.com/privacy" target="_blank"><span class="it">Privacy Policy di Supabase →</span><span class="en" hidden>Supabase Privacy Policy →</span></a></p>
 </div>
-<p>Nessun altro servizio di analisi, pubblicità o tracciamento è integrato nell'app.</p>
+<p>
+  <span class="it">Nessun altro servizio di analisi, pubblicità o tracciamento è integrato nell'app.</span>
+  <span class="en" hidden>No other analytics, advertising or tracking service is integrated in the app.</span>
+</p>
 
-<h2>7. Conservazione dei dati</h2>
-<p>I dati vengono conservati per tutta la durata dell'account. L'utente può richiedere la cancellazione completa dei propri dati in qualsiasi momento scrivendo a <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>. La cancellazione avviene entro 30 giorni dalla richiesta.</p>
+<h2><span class="it">7. Conservazione dei dati</span><span class="en" hidden>7. Data Retention</span></h2>
+<p>
+  <span class="it">I dati vengono conservati per tutta la durata dell'account. L'utente può richiedere la cancellazione completa dei propri dati in qualsiasi momento scrivendo a <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>. La cancellazione avviene entro 30 giorni dalla richiesta.</span>
+  <span class="en" hidden>Data is retained for the duration of the account. The user may request complete deletion of their data at any time by writing to <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>. Deletion takes place within 30 days of the request.</span>
+</p>
 
-<h2>8. Trasferimento internazionale</h2>
-<p>I dati possono essere conservati su server di Supabase localizzati negli Stati Uniti o in Europa. Supabase adotta le Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea per i trasferimenti extra-UE.</p>
+<h2><span class="it">8. Trasferimento internazionale</span><span class="en" hidden>8. International Transfer</span></h2>
+<p>
+  <span class="it">I dati possono essere conservati su server di Supabase localizzati negli Stati Uniti o in Europa. Supabase adotta le Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea per i trasferimenti extra-UE.</span>
+  <span class="en" hidden>Data may be stored on Supabase servers located in the United States or Europe. Supabase adopts the Standard Contractual Clauses (SCC) approved by the European Commission for transfers outside the EU.</span>
+</p>
 
-<h2>9. Diritti dell'utente (GDPR)</h2>
-<p>Ai sensi del Regolamento UE 2016/679, l'utente ha diritto a:</p>
+<h2><span class="it">9. Diritti dell'utente (GDPR)</span><span class="en" hidden>9. User Rights (GDPR)</span></h2>
+<p>
+  <span class="it">Ai sensi del Regolamento UE 2016/679, l'utente ha diritto a:</span>
+  <span class="en" hidden>Under EU Regulation 2016/679, the user has the right to:</span>
+</p>
 <ul>
-  <li><strong style="color:#faf8f4">Accesso:</strong> ottenere copia dei propri dati</li>
-  <li><strong style="color:#faf8f4">Rettifica:</strong> correggere dati inesatti</li>
-  <li><strong style="color:#faf8f4">Cancellazione:</strong> eliminare il proprio account e tutti i dati associati</li>
-  <li><strong style="color:#faf8f4">Portabilità:</strong> ricevere i propri dati in formato strutturato</li>
-  <li><strong style="color:#faf8f4">Opposizione:</strong> opporsi al trattamento in qualsiasi momento</li>
+  <li><strong style="color:#faf8f4"><span class="it">Accesso:</span><span class="en" hidden>Access:</span></strong> <span class="it"> ottenere copia dei propri dati</span><span class="en" hidden> obtain a copy of their data</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Rettifica:</span><span class="en" hidden>Rectification:</span></strong> <span class="it"> correggere dati inesatti</span><span class="en" hidden> correct inaccurate data</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Cancellazione:</span><span class="en" hidden>Erasure:</span></strong> <span class="it"> eliminare il proprio account e tutti i dati associati</span><span class="en" hidden> delete their account and all associated data</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Portabilità:</span><span class="en" hidden>Portability:</span></strong> <span class="it"> ricevere i propri dati in formato strutturato</span><span class="en" hidden> receive their data in a structured format</span></li>
+  <li><strong style="color:#faf8f4"><span class="it">Opposizione:</span><span class="en" hidden>Objection:</span></strong> <span class="it"> opporsi al trattamento in qualsiasi momento</span><span class="en" hidden> object to processing at any time</span></li>
 </ul>
-<p>Per esercitare questi diritti: <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a></p>
+<p>
+  <span class="it">Per esercitare questi diritti: </span><span class="en" hidden>To exercise these rights: </span><a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>
+</p>
 
-<h2>10. Minori</h2>
-<p>Komorebi non è destinata a utenti di età inferiore ai 13 anni. Non raccogliamo consapevolmente dati di minori. Se ritieni che un minore abbia creato un account, contattaci per la cancellazione immediata.</p>
+<h2><span class="it">10. Minori</span><span class="en" hidden>10. Minors</span></h2>
+<p>
+  <span class="it">Komorebi non è destinata a utenti di età inferiore ai 13 anni. Non raccogliamo consapevolmente dati di minori. Se ritieni che un minore abbia creato un account, contattaci per la cancellazione immediata.</span>
+  <span class="en" hidden>Komorebi is not intended for users under the age of 13. We do not knowingly collect data from minors. If you believe a minor has created an account, contact us for immediate deletion.</span>
+</p>
 
-<h2>11. Notifiche</h2>
-<p>Le notifiche di promemoria sono elaborate localmente sul dispositivo tramite Expo Notifications. Non utilizziamo servizi di push notification remota. L'utente può disabilitare le notifiche in qualsiasi momento dalle Impostazioni dell'app o dalle Impostazioni di sistema iOS.</p>
+<h2><span class="it">11. Notifiche</span><span class="en" hidden>11. Notifications</span></h2>
+<p>
+  <span class="it">Le notifiche di promemoria sono elaborate localmente sul dispositivo tramite Expo Notifications. Non utilizziamo servizi di push notification remota. L'utente può disabilitare le notifiche in qualsiasi momento dalle Impostazioni dell'app o dalle Impostazioni di sistema iOS.</span>
+  <span class="en" hidden>Reminder notifications are processed locally on the device via Expo Notifications. We do not use remote push notification services. The user can disable notifications at any time from the app Settings or from iOS system Settings.</span>
+</p>
 
-<h2>12. Modifiche alla Privacy Policy</h2>
-<p>Eventuali modifiche sostanziali saranno comunicate tramite notifica in-app o email. La data di "Ultimo aggiornamento" in cima a questo documento indica l'ultima revisione.</p>
+<h2><span class="it">12. Modifiche alla Privacy Policy</span><span class="en" hidden>12. Changes to the Privacy Policy</span></h2>
+<p>
+  <span class="it">Eventuali modifiche sostanziali saranno comunicate tramite notifica in-app o email. La data di "Ultimo aggiornamento" in cima a questo documento indica l'ultima revisione.</span>
+  <span class="en" hidden>Any material changes will be communicated via in-app notification or email. The "Last updated" date at the top of this document indicates the most recent revision.</span>
+</p>
 
-<h2>13. Contatti</h2>
+<h2><span class="it">13. Contatti</span><span class="en" hidden>13. Contact</span></h2>
 <div class="card">
-  <p>Per qualsiasi domanda relativa alla privacy:<br>
-  📧 <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a></p>
+  <p>
+    <span class="it">Per qualsiasi domanda relativa alla privacy:</span>
+    <span class="en" hidden>For any privacy-related questions:</span><br>
+    📧 <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>
+  </p>
 </div>
 
 <footer>
   <p>🌳 Komorebi · 木漏れ日</p>
-  <p style="margin-top: 8px;">© 2026 Studio Komorebi · Tutti i diritti riservati</p>
+  <p style="margin-top: 8px;"><span class="it">© 2026 Studio Komorebi · Tutti i diritti riservati</span><span class="en" hidden>© 2026 Studio Komorebi · All rights reserved</span></p>
 </footer>
+
+<script>
+  const btn = document.getElementById('langBtn');
+  let lang = 'it';
+  btn.addEventListener('click', () => {
+    lang = lang === 'it' ? 'en' : 'it';
+    document.querySelectorAll('.it').forEach(el => el.hidden = lang !== 'it');
+    document.querySelectorAll('.en').forEach(el => el.hidden = lang !== 'en');
+    btn.textContent = lang === 'it' ? 'EN' : 'IT';
+    document.documentElement.lang = lang;
+  });
+</script>
 
 </body>
 </html>

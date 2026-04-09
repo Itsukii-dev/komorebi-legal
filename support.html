@@ -58,71 +58,101 @@
       opacity: 0.4;
     }
     footer a { color: #7a9b6e; }
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #1e1c14;
+      border: 1px solid #4a6741;
+      color: #7a9b6e;
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 1px;
+      z-index: 100;
+    }
+    .lang-toggle:hover { background: #2a2818; }
   </style>
 </head>
 <body>
 
+<button class="lang-toggle" id="langBtn">EN</button>
+
   <header>
     <div class="logo">🌿</div>
-    <h1>Komorebi – Supporto</h1>
-    <p class="subtitle">SIAMO QUI PER AIUTARTI</p>
+    <h1>Komorebi – <span class="it">Supporto</span><span class="en" hidden>Support</span></h1>
+    <p class="subtitle"><span class="it">SIAMO QUI PER AIUTARTI</span><span class="en" hidden>WE'RE HERE TO HELP</span></p>
   </header>
 
-  <h2>Contattaci</h2>
+  <h2><span class="it">Contattaci</span><span class="en" hidden>Contact Us</span></h2>
   <p>
-    Hai un problema, una domanda o un suggerimento? Scrivici direttamente via email —
-    risponderemo nel più breve tempo possibile.
+    <span class="it">Hai un problema, una domanda o un suggerimento? Scrivici direttamente via email — risponderemo nel più breve tempo possibile.</span>
+    <span class="en" hidden>Have a problem, a question or a suggestion? Write to us directly by email — we will get back to you as soon as possible.</span>
   </p>
   <a class="contact-btn" href="mailto:supporto.komorebi@gmail.com">✉ supporto.komorebi@gmail.com</a>
 
-  <h2>Domande frequenti</h2>
+  <h2><span class="it">Domande frequenti</span><span class="en" hidden>Frequently Asked Questions</span></h2>
 
   <div class="faq-item">
-    <p class="faq-q">Come aggiungo una pianta?</p>
-    <p class="faq-a">Dalla schermata Home, tocca il pulsante "+" in alto a destra. Inserisci il nome, l'emoji e i cicli di cura per annaffiatura, concimazione e rinvaso.</p>
+    <p class="faq-q"><span class="it">Come aggiungo una pianta?</span><span class="en" hidden>How do I add a plant?</span></p>
+    <p class="faq-a"><span class="it">Dalla schermata Home, tocca il pulsante "+" in alto a destra. Inserisci il nome, l'emoji e i cicli di cura per annaffiatura, concimazione e rinvaso.</span><span class="en" hidden>From the Home screen, tap the "+" button in the top right. Enter the name, emoji and care cycles for watering, fertilising and repotting.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Come funzionano i promemoria?</p>
-    <p class="faq-a">Komorebi calcola la data della prossima cura in base all'ultima data registrata e all'intervallo che hai impostato. Puoi scegliere l'orario delle notifiche nelle Impostazioni dell'app.</p>
+    <p class="faq-q"><span class="it">Come funzionano i promemoria?</span><span class="en" hidden>How do reminders work?</span></p>
+    <p class="faq-a"><span class="it">Komorebi calcola la data della prossima cura in base all'ultima data registrata e all'intervallo che hai impostato. Puoi scegliere l'orario delle notifiche nelle Impostazioni dell'app.</span><span class="en" hidden>Komorebi calculates the next care date based on the last recorded date and the interval you have set. You can choose the notification time in the app Settings.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Non ricevo le notifiche — come mai?</p>
-    <p class="faq-a">Verifica che i permessi per le notifiche siano abilitati in Impostazioni iPhone → Komorebi → Notifiche. Assicurati anche che le notifiche siano attive nelle Impostazioni di Komorebi.</p>
+    <p class="faq-q"><span class="it">Non ricevo le notifiche — come mai?</span><span class="en" hidden>I'm not receiving notifications — why?</span></p>
+    <p class="faq-a"><span class="it">Verifica che i permessi per le notifiche siano abilitati in Impostazioni iPhone → Komorebi → Notifiche. Assicurati anche che le notifiche siano attive nelle Impostazioni di Komorebi.</span><span class="en" hidden>Check that notification permissions are enabled in iPhone Settings → Komorebi → Notifications. Also make sure notifications are turned on in Komorebi's Settings.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Come ripristino i miei acquisti?</p>
-    <p class="faq-a">Vai nelle Impostazioni di Komorebi e tocca "Ripristina acquisti". Assicurati di essere connesso con lo stesso ID Apple usato al momento dell'acquisto.</p>
+    <p class="faq-q"><span class="it">Come ripristino i miei acquisti?</span><span class="en" hidden>How do I restore my purchases?</span></p>
+    <p class="faq-a"><span class="it">Vai nelle Impostazioni di Komorebi e tocca "Ripristina acquisti". Assicurati di essere connesso con lo stesso ID Apple usato al momento dell'acquisto.</span><span class="en" hidden>Go to Komorebi's Settings and tap "Restore Purchases". Make sure you are signed in with the same Apple ID used at the time of purchase.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Come annullo l'abbonamento?</p>
-    <p class="faq-a">Puoi gestire o annullare l'abbonamento in qualsiasi momento da Impostazioni iPhone → ID Apple → Abbonamenti → Komorebi.</p>
+    <p class="faq-q"><span class="it">Come annullo l'abbonamento?</span><span class="en" hidden>How do I cancel my subscription?</span></p>
+    <p class="faq-a"><span class="it">Puoi gestire o annullare l'abbonamento in qualsiasi momento da Impostazioni iPhone → ID Apple → Abbonamenti → Komorebi.</span><span class="en" hidden>You can manage or cancel your subscription at any time from iPhone Settings → Apple ID → Subscriptions → Komorebi.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Ho perso i miei dati dopo aver reinstallato l'app — posso recuperarli?</p>
-    <p class="faq-a">I dati di Komorebi sono legati al tuo account. Accedi con la stessa email usata in precedenza per ritrovare tutte le tue piante.</p>
+    <p class="faq-q"><span class="it">Ho perso i miei dati dopo aver reinstallato l'app — posso recuperarli?</span><span class="en" hidden>I lost my data after reinstalling the app — can I recover it?</span></p>
+    <p class="faq-a"><span class="it">I dati di Komorebi sono legati al tuo account. Accedi con la stessa email usata in precedenza per ritrovare tutte le tue piante.</span><span class="en" hidden>Komorebi data is tied to your account. Log in with the same email you used before to find all your plants again.</span></p>
   </div>
 
   <div class="faq-item">
-    <p class="faq-q">Il piano Lifetime include tutto?</p>
-    <p class="faq-a">Il piano Lifetime sblocca piante e inventario illimitati con un pagamento unico. Per accedere alle guide avanzate nella sezione Impara e alle foto illimitate nel diario è necessario un abbonamento mensile o annuale.</p>
+    <p class="faq-q"><span class="it">Il piano Lifetime include tutto?</span><span class="en" hidden>Does the Lifetime plan include everything?</span></p>
+    <p class="faq-a"><span class="it">Il piano Lifetime sblocca piante e inventario illimitati con un pagamento unico. Per accedere alle guide avanzate nella sezione Impara e alle foto illimitate nel diario è necessario un abbonamento mensile o annuale.</span><span class="en" hidden>The Lifetime plan unlocks unlimited plants and inventory with a one-time payment. To access the advanced guides in the Learn section and unlimited photos in the journal, a monthly or annual subscription is required.</span></p>
   </div>
 
-  <h2>Informazioni legali</h2>
+  <h2><span class="it">Informazioni legali</span><span class="en" hidden>Legal Information</span></h2>
   <div class="card">
     <p>
       <a href="./privacy-policy.html">Privacy Policy</a><br/>
-      <a href="./terms-of-service.html">Termini di Servizio</a>
+      <a href="./terms-of-service.html"><span class="it">Termini di Servizio</span><span class="en" hidden>Terms of Service</span></a>
     </p>
   </div>
 
   <footer>
     <p>© 2025 Itsukii Studio · <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a></p>
   </footer>
+
+<script>
+  const btn = document.getElementById('langBtn');
+  let lang = 'it';
+  btn.addEventListener('click', () => {
+    lang = lang === 'it' ? 'en' : 'it';
+    document.querySelectorAll('.it').forEach(el => el.hidden = lang !== 'it');
+    document.querySelectorAll('.en').forEach(el => el.hidden = lang !== 'en');
+    btn.textContent = lang === 'it' ? 'EN' : 'IT';
+    document.documentElement.lang = lang;
+  });
+</script>
 
 </body>
 </html>
