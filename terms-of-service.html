@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Komorebi – Termini di Servizio</title>
+  <title>Komorebi – Terms of Service</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -19,7 +19,6 @@
     .logo { font-size: 64px; margin-bottom: 12px; }
     h1 { color: #faf8f4; font-size: 28px; font-weight: 300; letter-spacing: -0.5px; margin-bottom: 8px; }
     .subtitle { font-size: 13px; opacity: 0.5; letter-spacing: 1px; }
-    .updated { display: inline-block; margin-top: 12px; font-size: 12px; background: rgba(74,103,65,0.2); color: #7a9b6e; border-radius: 999px; padding: 4px 14px; }
     h2 { color: #faf8f4; font-size: 18px; font-weight: 400; margin: 40px 0 14px; letter-spacing: 0.3px; }
     h2::before { content: ""; display: inline-block; width: 4px; height: 18px; background: #4a6741; border-radius: 2px; margin-right: 12px; vertical-align: middle; }
     p { margin-bottom: 14px; font-weight: 300; opacity: 0.85; }
@@ -27,9 +26,38 @@
     li { margin-bottom: 8px; font-weight: 300; opacity: 0.85; }
     a { color: #7a9b6e; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .card { background: #1e1c14; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
-    .highlight { background: rgba(74,103,65,0.1); border: 1px solid rgba(74,103,65,0.2); border-radius: 16px; padding: 20px 24px; margin: 16px 0; }
-    footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; font-size: 12px; opacity: 0.4; }
+    .card {
+      background: #1e1c14;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .contact-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #4a6741;
+      color: #faf8f4;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+    }
+    .contact-btn:hover { background: #5a7a50; text-decoration: none; }
+    .faq-item { margin-bottom: 28px; }
+    .faq-q { color: #faf8f4; font-weight: 500; margin-bottom: 6px; }
+    .faq-a { opacity: 0.8; font-weight: 300; }
+    footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.4;
+    }
+    footer a { color: #7a9b6e; }
     .lang-toggle {
       position: fixed;
       top: 20px;
@@ -46,187 +74,83 @@
       z-index: 100;
     }
     .lang-toggle:hover { background: #2a2818; }
+  
+    table { width:100%; border-collapse:collapse; margin:14px 0 22px; font-size:14px; }
+    th, td { border:1px solid rgba(255,255,255,0.08); padding:8px 10px; text-align:left; vertical-align:top; font-weight:300; }
+    th { color:#faf8f4; font-weight:500; background:#1e1c14; }
+    h2.lang { font-size:22px; color:#faf8f4; margin-top:56px; }
+    nav.langs { text-align:center; margin-bottom:32px; font-size:13px; }
+    nav.langs a { margin:0 10px; }
+    hr { border:0; border-top:1px solid rgba(255,255,255,0.06); margin:32px 0; }
+    strong { color:#faf8f4; font-weight:500; }
   </style>
 </head>
 <body>
-
-<button class="lang-toggle" id="langBtn">EN</button>
-
-<header>
-  <div class="logo">🌳</div>
-  <h1>Komorebi</h1>
-  <div class="subtitle">
-    <span class="it">TERMINI DI SERVIZIO</span>
-    <span class="en" hidden>TERMS OF SERVICE</span>
-  </div>
-  <div class="updated">
-    <span class="it">Ultimo aggiornamento: marzo 2026</span>
-    <span class="en" hidden>Last updated: March 2026</span>
-  </div>
-</header>
-
-<div class="highlight">
-  <p>
-    <strong style="color:#faf8f4"><span class="it">In breve:</span><span class="en" hidden>In short:</span></strong>
-    <span class="it"> Komorebi è un'app per la cura dei bonsai e delle piante. Usala responsabilmente, non abusarne, e rispetta il lavoro che c'è dietro. In cambio, ti offriamo un servizio curato e rispettoso della tua privacy.</span>
-    <span class="en" hidden> Komorebi is an app for plant care. Use it responsibly, don't abuse it, and respect the work behind it. In return, we offer a carefully crafted service that respects your privacy.</span>
-  </p>
-</div>
-
-<h2><span class="it">1. Accettazione dei termini</span><span class="en" hidden>1. Acceptance of Terms</span></h2>
-<p>
-  <span class="it">Scaricando, installando o utilizzando l'applicazione Komorebi ("l'App"), l'utente accetta i presenti Termini di Servizio. Se non accetti questi termini, ti invitiamo a non utilizzare l'App.</span>
-  <span class="en" hidden>By downloading, installing or using the Komorebi application ("the App"), the user agrees to these Terms of Service. If you do not accept these terms, please do not use the App.</span>
-</p>
-
-<h2><span class="it">2. Descrizione del servizio</span><span class="en" hidden>2. Service Description</span></h2>
-<p>
-  <span class="it">Komorebi è un'applicazione mobile per iOS che consente di:</span>
-  <span class="en" hidden>Komorebi is a mobile application for iOS that allows you to:</span>
-</p>
-<ul>
-  <li><span class="it">Gestire una collezione di bonsai e piante</span><span class="en" hidden>Manage a collection of bonsai and plants</span></li>
-  <li><span class="it">Tenere traccia delle cure (annaffiatura, concimazione, rinvaso, potatura)</span><span class="en" hidden>Track care tasks (watering, fertilising, repotting, pruning)</span></li>
-  <li><span class="it">Ricevere promemoria personalizzati per le cure</span><span class="en" hidden>Receive personalised care reminders</span></li>
-  <li><span class="it">Mantenere un diario fotografico di crescita</span><span class="en" hidden>Maintain a photographic growth journal</span></li>
-  <li><span class="it">Consultare una scheda di cura per ciascuna specie</span><span class="en" hidden>Consult a care guide for each species</span></li>
-</ul>
-
-<h2><span class="it">3. Account utente</span><span class="en" hidden>3. User Account</span></h2>
-<p>
-  <span class="it">Per utilizzare Komorebi è necessario creare un account con un indirizzo email valido e una password. L'utente è responsabile di:</span>
-  <span class="en" hidden>To use Komorebi you must create an account with a valid email address and password. The user is responsible for:</span>
-</p>
-<ul>
-  <li><span class="it">Mantenere riservate le credenziali di accesso</span><span class="en" hidden>Keeping login credentials confidential</span></li>
-  <li><span class="it">Tutte le attività effettuate tramite il proprio account</span><span class="en" hidden>All activities carried out through their account</span></li>
-  <li><span class="it">Notificare immediatamente eventuali accessi non autorizzati a </span><span class="en" hidden>Immediately reporting any unauthorised access to </span><a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a></li>
-</ul>
-<p>
-  <span class="it">Ci riserviamo il diritto di sospendere o eliminare account che violino i presenti termini.</span>
-  <span class="en" hidden>We reserve the right to suspend or delete accounts that violate these terms.</span>
-</p>
-
-<h2><span class="it">4. Versione gratuita e Premium</span><span class="en" hidden>4. Free and Premium Version</span></h2>
-<p>
-  <span class="it">Komorebi è disponibile in due versioni:</span>
-  <span class="en" hidden>Komorebi is available in two versions:</span>
-</p>
-<div class="card">
-  <p><strong style="color:#faf8f4"><span class="it">Versione gratuita:</span><span class="en" hidden>Free version:</span></strong> <span class="it">permette di aggiungere fino a 3 piante e accedere alle funzionalità di base dell'app.</span><span class="en" hidden>allows adding up to 3 plants and access to the app's basic features.</span></p>
-  <p style="margin-top: 12px; margin-bottom: 0;"><strong style="color:#faf8f4"><span class="it">Versione Premium:</span><span class="en" hidden>Premium version:</span></strong> <span class="it">acquisto una tantum che sblocca piante illimitate e l'accesso completo a tutte le funzionalità presenti e future.</span><span class="en" hidden>a one-time purchase that unlocks unlimited plants and full access to all current and future features.</span></p>
-</div>
-<p>
-  <span class="it">Gli acquisti in-app sono gestiti tramite Apple App Store e sono soggetti alle relative condizioni di Apple. Non sono previsti rimborsi salvo quanto stabilito dalle politiche di Apple.</span>
-  <span class="en" hidden>In-app purchases are managed through the Apple App Store and are subject to Apple's applicable terms. No refunds are provided except as required by Apple's policies.</span>
-</p>
-
-<h2><span class="it">5. Contenuti dell'utente</span><span class="en" hidden>5. User Content</span></h2>
-<p>
-  <span class="it">L'utente mantiene la piena proprietà dei contenuti inseriti nell'app (note, fotografie, dati delle piante). Concede a Komorebi una licenza limitata, non esclusiva, per conservare e visualizzare tali contenuti al solo scopo di erogare il servizio.</span>
-  <span class="en" hidden>The user retains full ownership of content entered in the app (notes, photographs, plant data). The user grants Komorebi a limited, non-exclusive licence to store and display such content solely for the purpose of providing the service.</span>
-</p>
-<p>
-  <span class="it">L'utente si impegna a non inserire contenuti illegali, offensivi o che violino diritti di terzi.</span>
-  <span class="en" hidden>The user agrees not to enter content that is illegal, offensive, or that infringes third-party rights.</span>
-</p>
-
-<h2><span class="it">6. Limitazione di responsabilità</span><span class="en" hidden>6. Limitation of Liability</span></h2>
-<p>
-  <span class="it">Komorebi fornisce informazioni di cura a scopo indicativo, basate su dati generali per ciascuna specie. Non garantiamo che seguendo i consigli dell'app le piante sopravvivano o prosperino — le condizioni ambientali, il tipo di terreno, il clima locale e molti altri fattori influenzano la salute delle piante.</span>
-  <span class="en" hidden>Komorebi provides care information for guidance purposes only, based on general data for each species. We do not guarantee that following the app's advice will result in plants surviving or thriving — environmental conditions, soil type, local climate and many other factors affect plant health.</span>
-</p>
-<p>
-  <span class="it">Komorebi non è responsabile per:</span>
-  <span class="en" hidden>Komorebi is not liable for:</span>
-</p>
-<ul>
-  <li><span class="it">Perdita o danneggiamento di piante</span><span class="en" hidden>Loss or damage to plants</span></li>
-  <li><span class="it">Interruzioni del servizio dovute a manutenzione o cause di forza maggiore</span><span class="en" hidden>Service interruptions due to maintenance or force majeure</span></li>
-  <li><span class="it">Perdita di dati causata da guasti del dispositivo</span><span class="en" hidden>Data loss caused by device failure</span></li>
-</ul>
-
-<h2><span class="it">7. Disponibilità del servizio</span><span class="en" hidden>7. Service Availability</span></h2>
-<p>
-  <span class="it">Ci impegniamo a mantenere il servizio disponibile, ma non garantiamo un uptime del 100%. Potremmo effettuare manutenzioni programmate o straordinarie con o senza preavviso. In caso di interruzioni prolungate che impattino gli utenti Premium, valuteremo compensazioni caso per caso.</span>
-  <span class="en" hidden>We endeavour to keep the service available, but we do not guarantee 100% uptime. We may carry out scheduled or emergency maintenance with or without notice. In the event of prolonged outages affecting Premium users, we will evaluate compensation on a case-by-case basis.</span>
-</p>
-
-<h2><span class="it">8. Modifiche al servizio</span><span class="en" hidden>8. Changes to the Service</span></h2>
-<p>
-  <span class="it">Ci riserviamo il diritto di modificare, aggiornare o interrompere funzionalità dell'App. Le modifiche sostanziali saranno comunicate con almeno 30 giorni di preavviso tramite notifica in-app o email. Gli utenti Premium che non accettano le modifiche possono richiedere un rimborso proporzionale contattando </span>
-  <span class="en" hidden>We reserve the right to modify, update or discontinue features of the App. Material changes will be communicated with at least 30 days' notice via in-app notification or email. Premium users who do not accept the changes may request a proportional refund by contacting </span><a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>.
-</p>
-
-<h2><span class="it">9. Proprietà intellettuale</span><span class="en" hidden>9. Intellectual Property</span></h2>
-<p>
-  <span class="it">Tutti i contenuti originali di Komorebi — inclusi design, testi, illustrazioni, codice e marchio — sono di proprietà esclusiva di Studio Komorebi e protetti dalle leggi sul diritto d'autore. È vietata la riproduzione, distribuzione o modifica senza autorizzazione scritta.</span>
-  <span class="en" hidden>All original content of Komorebi — including design, text, illustrations, code and brand — is the exclusive property of Studio Komorebi and protected by copyright law. Reproduction, distribution or modification without written authorisation is prohibited.</span>
-</p>
-
-<h2><span class="it">10. Condotta dell'utente</span><span class="en" hidden>10. User Conduct</span></h2>
-<p>
-  <span class="it">L'utente si impegna a non:</span>
-  <span class="en" hidden>The user agrees not to:</span>
-</p>
-<ul>
-  <li><span class="it">Tentare di violare la sicurezza dell'App o dei server</span><span class="en" hidden>Attempt to breach the security of the App or servers</span></li>
-  <li><span class="it">Effettuare reverse engineering del codice</span><span class="en" hidden>Reverse engineer the code</span></li>
-  <li><span class="it">Utilizzare l'App per scopi commerciali non autorizzati</span><span class="en" hidden>Use the App for unauthorised commercial purposes</span></li>
-  <li><span class="it">Creare account multipli per aggirare i limiti della versione gratuita</span><span class="en" hidden>Create multiple accounts to circumvent the free version limits</span></li>
-</ul>
-
-<h2><span class="it">11. Cancellazione dell'account</span><span class="en" hidden>11. Account Deletion</span></h2>
-<p>
-  <span class="it">L'utente può richiedere la cancellazione del proprio account e di tutti i dati associati in qualsiasi momento scrivendo a <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>. La cancellazione avviene entro 30 giorni dalla richiesta. L'acquisto Premium non è rimborsabile in caso di cancellazione volontaria dell'account.</span>
-  <span class="en" hidden>The user may request deletion of their account and all associated data at any time by writing to <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>. Deletion takes place within 30 days of the request. The Premium purchase is not refundable in the event of voluntary account deletion.</span>
-</p>
-
-<h2><span class="it">12. Legge applicabile</span><span class="en" hidden>12. Governing Law</span></h2>
-<p>
-  <span class="it">I presenti Termini sono regolati dalla legge italiana. Per qualsiasi controversia è competente il Foro di residenza dell'utente consumatore, ai sensi del Codice del Consumo (D.Lgs. 206/2005).</span>
-  <span class="en" hidden>These Terms are governed by Italian law. For any dispute, jurisdiction lies with the court of the consumer user's place of residence, pursuant to the Consumer Code (Legislative Decree 206/2005).</span>
-</p>
-
-<h2><span class="it">13. Modifiche ai Termini</span><span class="en" hidden>13. Changes to the Terms</span></h2>
-<p>
-  <span class="it">Potremmo aggiornare i presenti Termini periodicamente. La data di "Ultimo aggiornamento" in cima indica l'ultima revisione. L'utilizzo continuato dell'App dopo le modifiche costituisce accettazione dei nuovi termini.</span>
-  <span class="en" hidden>We may update these Terms periodically. The "Last updated" date at the top indicates the most recent revision. Continued use of the App after changes constitutes acceptance of the new terms.</span>
-</p>
-
-<h2><span class="it">14. Contatti</span><span class="en" hidden>14. Contact</span></h2>
-<div class="card">
-  <p>
-    <span class="it">Per qualsiasi domanda sui presenti Termini:</span>
-    <span class="en" hidden>For any questions about these Terms:</span><br>
-    📧 <a href="mailto:supporto.komorebi@gmail.com">supporto.komorebi@gmail.com</a>
-  </p>
-</div>
-
-<div class="card" style="text-align:center; margin-top: 48px;">
-  <p>
-    <a href="./privacy-policy.html">Privacy Policy</a>
-    &nbsp;·&nbsp;
-    <a href="./support.html"><span class="it">Supporto</span><span class="en" hidden>Support</span></a>
-  </p>
-</div>
-
-<footer>
-  <p>🌳 Komorebi · 木漏れ日</p>
-  <p style="margin-top: 8px;"><span class="it">© 2026 Studio Komorebi · Tutti i diritti riservati</span><span class="en" hidden>© 2026 Studio Komorebi · All rights reserved</span></p>
-</footer>
-
-<script>
-  const btn = document.getElementById('langBtn');
-  let lang = 'it';
-  btn.addEventListener('click', () => {
-    lang = lang === 'it' ? 'en' : 'it';
-    document.querySelectorAll('.it').forEach(el => el.hidden = lang !== 'it');
-    document.querySelectorAll('.en').forEach(el => el.hidden = lang !== 'en');
-    btn.textContent = lang === 'it' ? 'EN' : 'IT';
-    document.documentElement.lang = lang;
-  });
-</script>
-
+  <header>
+    <div class="logo">🌿</div>
+    <h1>Termini di Servizio / Terms of Service</h1>
+  </header>
+  <nav class="langs"><a href="#it">Italiano</a><a href="#en">English</a></nav>
+  <p><strong>Komorebi — App per la cura di piante e bonsai / plant and bonsai care app</strong><br>Versione / Version: ottobre 2026 / October 2026</p>
+<hr>
+<h2 class="lang" id="it">Italiano</h2>
+<h2>1. Accettazione</h2>
+<p>Usando Komorebi ("l'App") accetti questi Termini. Se non li accetti, non usare l'App. L'App è fornita da <strong>Itsukii Studio (Emanuele Pina)</strong>, contatto <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong>. L'App è distribuita su <strong>Apple App Store (iOS)</strong> e <strong>Google Play (Android)</strong>; per gli utenti iOS valgono anche i termini standard di licenza di Apple (Apple Standard EULA), per quelli Android i termini di Google Play. Apple e Google non sono parti di questi Termini e non sono responsabili dell'App né del suo supporto.</p>
+<h2>2. Il servizio</h2>
+<p>Komorebi ti aiuta a curare piante e bonsai: gestione delle piante e dei promemoria di cura, diario con foto, inventario dei prodotti, schede e articoli informativi, avvisi meteo facoltativi, esportazione dei tuoi dati.</p>
+<h2>3. Età e account</h2>
+<p>Devi avere <strong>almeno 14 anni</strong>. Per usare l'App serve un account (email e password). Sei responsabile delle tue credenziali e delle attività svolte con il tuo account; avvisaci subito a <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong> in caso di accesso non autorizzato. Puoi eliminare l'account in ogni momento da Profilo &gt; Elimina account (vedi anche l'Informativa sulla Privacy). Possiamo sospendere account usati in violazione dei Termini.</p>
+<h2>4. Versione gratuita</h2>
+<p>L'App è gratuita con dei limiti sul numero di piante, di prodotti in inventario e di foto del diario per pianta. I limiti attuali sono mostrati nell'App. I limiti possono cambiare con avviso nell'App.</p>
+<h2>5. Acquisti in-app e abbonamenti</h2>
+<ul><li>Le funzioni premium si sbloccano con un abbonamento (mensile o annuale) o con un acquisto unico "accesso illimitato" (senza scadenza), tramite gli acquisti in-app di Apple o Google. <strong>I prezzi sono mostrati nello store prima dell'acquisto</strong> e possono variare per paese e valuta.</li><li><strong>Rinnovo automatico.</strong> Gli abbonamenti si rinnovano automaticamente per lo stesso periodo e allo stesso prezzo, a meno che tu non li disdica almeno 24 ore prima della fine del periodo in corso. Il pagamento è addebitato al tuo account Apple ID o Google Play alla conferma dell'acquisto e a ogni rinnovo.</li><li><strong>Disdetta.</strong> Apple: Impostazioni del dispositivo &gt; [il tuo nome] &gt; Abbonamenti. Google Play: app Google Play &gt; Profilo &gt; Pagamenti e abbonamenti &gt; Abbonamenti. La disdetta vale dal termine del periodo già pagato; non ci sono rimborsi parziali del periodo in corso salvo quanto previsto dalla legge e dalle regole dello store. <strong>Eliminare l'account di Komorebi non annulla l'abbonamento</strong>: va disdetto nello store.</li><li><strong>Prove gratuite</strong>, ove offerte, passano ad abbonamento a pagamento alla fine della prova se non disdette in tempo.</li><li><strong>Ripristino acquisti.</strong> Puoi ripristinare gli acquisti già effettuati con "Ripristina acquisti" nell'App, usando lo stesso account store.</li><li><strong>Rimborsi.</strong> I pagamenti sono gestiti da Apple o Google: le richieste di rimborso vanno fatte a loro (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> / Google Play). Non possiamo emettere rimborsi direttamente. Restano salvi i diritti dei consumatori previsti dalla legge, compreso il diritto di recesso dove applicabile e le regole dello store al riguardo.</li><li>Se un acquisto non risulta sbloccato, usa "Ripristina acquisti" e, se il problema persiste, scrivici.</li></ul>
+<h2>6. Uso consentito</h2>
+<p>Non devi: usare l'App per scopi illeciti; cercare di accedere ad aree o dati che non sono tuoi; decompilare, modificare o aggirare le protezioni dell'App; rivendere o sublicenziare l'App; caricare contenuti illeciti, offensivi o che violano diritti altrui; sovraccaricare o disturbare i servizi.</p>
+<h2>7. I tuoi contenuti</h2>
+<p>I contenuti che inserisci (piante, note, foto, inventario) restano tuoi. Ci dai una licenza limitata, non esclusiva e revocabile per conservarli ed elaborarli solo per fornirti il servizio. Non li vendiamo né li usiamo per pubblicità. Sei responsabile di ciò che carichi. Eliminando un contenuto o l'account, lo rimuoviamo come descritto nell'Informativa sulla Privacy.</p>
+<h2>8. Proprietà intellettuale</h2>
+<p>L'App, il suo codice, grafica e testi originali (comprese le schede e gli articoli) sono nostri o dei nostri licenzianti. Ti concediamo una licenza personale, non esclusiva, non trasferibile e revocabile per usare l'App sui tuoi dispositivi, per uso non commerciale.</p>
+<h2>9. Informazioni di cura e limitazione di responsabilità</h2>
+<p>Le indicazioni di cura, gli articoli e gli avvisi meteo sono orientativi e non garantiscono il risultato sulle tue piante, che dipende da molti fattori (clima, substrato, esposizione, specie). Gli avvisi meteo e le notifiche possono ritardare o non arrivare.</p>
+<p>Nei limiti consentiti dalla legge: non rispondiamo di danni indiretti o consequenziali, né della perdita di piante; la nostra responsabilità complessiva non supera quanto hai pagato per l'App negli ultimi 12 mesi. Restano esclusi dai limiti i casi in cui la legge non consente di limitare la responsabilità (dolo, colpa grave, danni alla persona, diritti inderogabili dei consumatori).</p>
+<h2>10. Disponibilità del servizio</h2>
+<p>L'App dipende da servizi online (account, sincronizzazione, avvisi). Possiamo modificarla, sospenderla per manutenzione o interromperla; in caso di interruzione definitiva daremo un ragionevole preavviso e la possibilità di esportare i tuoi dati.</p>
+<h2>11. Modifiche ai Termini</h2>
+<p>Possiamo aggiornare i Termini; per modifiche sostanziali ti avviseremo nell'App o via email prima che entrino in vigore. Se continui a usare l'App dopo l'entrata in vigore, accetti i nuovi Termini; altrimenti puoi smettere di usarla ed eliminare l'account.</p>
+<h2>12. Legge applicabile e foro</h2>
+<p>Si applica la legge italiana. Le parti cercheranno prima una soluzione amichevole; in mancanza è competente il Tribunale di <strong>Como</strong>, salvo il foro inderogabile del consumatore del suo luogo di residenza o domicilio.</p>
+<h2>13. Contatti</h2>
+<p><strong>Itsukii Studio (Emanuele Pina)</strong> — <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong></p>
+<hr>
+<h2 class="lang" id="en">English</h2>
+<h2>1. Acceptance</h2>
+<p>By using Komorebi (the "App") you accept these Terms. If you do not accept them, do not use the App. The App is provided by <strong>Itsukii Studio (Emanuele Pina)</strong>, contact <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong>. The App is distributed on the <strong>Apple App Store (iOS)</strong> and <strong>Google Play (Android)</strong>; iOS users are also covered by Apple's Standard EULA, Android users by Google Play's terms. Apple and Google are not parties to these Terms and are not responsible for the App or its support.</p>
+<h2>2. The service</h2>
+<p>Komorebi helps you care for plants and bonsai: plant and care-reminder management, photo diary, product inventory, informational guides and articles, optional weather alerts, export of your data.</p>
+<h2>3. Age and account</h2>
+<p>You must be <strong>at least 14 years old</strong>. An account (email and password) is required. You are responsible for your credentials and for activity under your account; tell us at once at <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong> about any unauthorised access. You can delete your account at any time from Profile &gt; Delete account (see also the Privacy Policy). We may suspend accounts used in breach of these Terms.</p>
+<h2>4. Free version</h2>
+<p>The App is free with limits on the number of plants, inventory products and diary photos per plant. Current limits are shown in the App. Limits may change with notice in the App.</p>
+<h2>5. In-app purchases and subscriptions</h2>
+<ul><li>Premium features are unlocked by a subscription (monthly or yearly) or by a one-time "unlimited access" purchase (no expiry), through Apple or Google in-app purchases. <strong>Prices are shown in the store before purchase</strong> and vary by country and currency.</li><li><strong>Auto-renewal.</strong> Subscriptions renew automatically for the same period and at the same price unless you cancel at least 24 hours before the end of the current period. Payment is charged to your Apple ID or Google Play account at purchase confirmation and at each renewal.</li><li><strong>Cancellation.</strong> Apple: device Settings &gt; [your name] &gt; Subscriptions. Google Play: Google Play app &gt; Profile &gt; Payments &amp; subscriptions &gt; Subscriptions. Cancellation takes effect at the end of the period already paid; no partial refund of the current period except as required by law and store rules. <strong>Deleting your Komorebi account does not cancel your subscription</strong>: cancel it in the store.</li><li><strong>Free trials</strong>, where offered, convert to a paid subscription at the end of the trial unless cancelled in time.</li><li><strong>Restore purchases.</strong> You can restore previous purchases with "Restore purchases" in the App, using the same store account.</li><li><strong>Refunds.</strong> Payments are handled by Apple or Google: refund requests go to them (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> / Google Play). We cannot issue refunds directly. Statutory consumer rights, including withdrawal rights where applicable and the stores' rules on them, are unaffected.</li><li>If a purchase is not unlocked, use "Restore purchases" and, if it persists, contact us.</li></ul>
+<h2>6. Acceptable use</h2>
+<p>You must not: use the App for unlawful purposes; try to access areas or data that are not yours; decompile, modify or circumvent the App's protections; resell or sublicense the App; upload unlawful or offensive content or content that infringes others' rights; overload or disrupt the services.</p>
+<h2>7. Your content</h2>
+<p>Content you enter (plants, notes, photos, inventory) remains yours. You grant us a limited, non-exclusive, revocable licence to store and process it solely to provide the service. We do not sell it or use it for advertising. You are responsible for what you upload. When you delete content or your account we remove it as described in the Privacy Policy.</p>
+<h2>8. Intellectual property</h2>
+<p>The App, its code, graphics and original texts (including guides and articles) belong to us or our licensors. We grant you a personal, non-exclusive, non-transferable, revocable licence to use the App on your devices for non-commercial use.</p>
+<h2>9. Care information and limitation of liability</h2>
+<p>Care guidance, articles and weather alerts are indicative and do not guarantee results for your plants, which depend on many factors (climate, substrate, exposure, species). Weather alerts and notifications may be delayed or not delivered.</p>
+<p>To the extent permitted by law: we are not liable for indirect or consequential damages or for the loss of plants; our total liability does not exceed what you paid for the App in the last 12 months. These limits do not apply where the law does not allow limiting liability (wilful misconduct, gross negligence, personal injury, mandatory consumer rights).</p>
+<h2>10. Availability</h2>
+<p>The App depends on online services (account, sync, alerts). We may change it, suspend it for maintenance or discontinue it; for a permanent shutdown we will give reasonable notice and the chance to export your data.</p>
+<h2>11. Changes to the Terms</h2>
+<p>We may update the Terms; for material changes we will notify you in the App or by email before they take effect. If you keep using the App afterwards you accept the new Terms; otherwise you may stop using it and delete your account.</p>
+<h2>12. Governing law and courts</h2>
+<p>Italian law applies. The parties will first seek an amicable solution; failing that, the Court of <strong>Como</strong> has jurisdiction, without prejudice to the mandatory forum of a consumer's place of residence or domicile.</p>
+<h2>13. Contact</h2>
+<p><strong>Itsukii Studio (Emanuele Pina)</strong> — <strong>supporto.<a href="mailto:komorebi@gmail.com">komorebi@gmail.com</a></strong></p>
+<p>*Ultimo aggiornamento / Last updated: ottobre 2026 / October 2026*</p>
+  <footer>© Itsukii Studio · <a href="support.html">Support</a> · <a href="privacy-policy.html">Privacy</a> · <a href="terms-of-service.html">Terms</a></footer>
 </body>
 </html>
